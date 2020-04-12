@@ -1,0 +1,1021 @@
+### Initialization (?) 404
+
+
+Request Head:
+
+POST /v1/props HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; Pixel 3 Build/PQ2A.190405.003)
+Host: 192.168.0.1
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 0
+
+
+Body:
+
+
+
+Response Head:
+
+HTTP/1.1 404 Not Found
+Content-Length: 15
+Server: Crow/0.1
+Date: Sat, 20 Apr 2019 10:00:31 GMT
+
+
+Body:
+
+404 Not Found
+
+### Initialization (?) 200
+
+
+Request Head:
+
+GET /v1/props HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; Pixel 3 Build/PQ2A.190405.003)
+Host: 192.168.0.1
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
+
+Body:
+
+
+
+Response Head:
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Expires: 0
+Pragma: no-cache
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+Content-Length: 5403
+Server: Crow/0.1
+Date: Sat, 20 Apr 2019 10:00:31 GMT
+
+
+Body:
+
+{
+	
+	    "errCode": 200,
+	
+	    "errMsg": "OK",
+	
+	    "manufacturer": "RICOH IMAGING COMPANY,
+	 LTD.",
+	
+	    "model": "RICOH GR III",
+	
+	    "serialNo": "0010597",
+	
+	    "firmwareVersion": "1.00",
+	
+	    "macAddress": "44:91:60:01:9A:81",
+	
+	    "channelList": [
+		
+		        1,
+		
+		        2,
+		
+		        3,
+		
+		        4,
+		
+		        5,
+		
+		        6,
+		
+		        7,
+		
+		        8,
+		
+		        9,
+		
+		        10,
+		
+		        11
+		    
+	],
+	
+	    "hot": false,
+	
+	    "battery": 75,
+	
+	    "operationModeList": [
+		
+		        "capture",
+		
+		        "playback"
+		    
+	],
+	
+	    "stillFormatList": [
+		
+		        "jpeg",
+		
+		        "dng",
+		
+		        "rawdng"
+		    
+	],
+	
+	    "storages": [
+		
+		        {
+			
+			            "name": "in",
+			
+			            "equipped": true,
+			
+			            "available": false,
+			
+			            "writable": false,
+			
+			            "format": "dng",
+			
+			            "remain": 0,
+			
+			            "recordableTime": 0,
+			
+			            "numOfPhotos": 0,
+			
+			            "numOfMovies": 0
+			        
+		},
+		
+		        {
+			
+			            "name": "sd1",
+			
+			            "equipped": true,
+			
+			            "available": true,
+			
+			            "writable": true,
+			
+			            "format": "dng",
+			
+			            "remain": 558,
+			
+			            "recordableTime": 2729,
+			
+			            "numOfPhotos": 0,
+			
+			            "numOfMovies": 0
+			        
+		}
+		    
+	],
+	
+	    "datetime": "2019-04-20T10:00:34",
+	
+	    "operationMode": "capture",
+	
+	    "geoTagging": "off",
+	
+	    "gpsInfo": "",
+	
+	    "bdName": "GR_0138AA",
+	
+	    "bleEnableCondition": "disable",
+	
+	    "channel": 6,
+	
+	    "ssid": "GR_019A81",
+	
+	    "key": "10007671",
+	
+	    "powerOffTransfer": "off",
+	
+	    "stillFormat": "dng",
+	
+	    "focusSettingList": [
+		
+		        "manual",
+		
+		        "snap",
+		
+		        "inf",
+		
+		        "spot",
+		
+		        "multiauto",
+		
+		        "pinpoint",
+		
+		        "tracking",
+		
+		        "continuous"
+		    
+	],
+	
+	    "focused": false,
+	
+	    "focusEffectiveArea": [
+		
+		        68,
+		
+		        64
+		    
+	],
+	
+	    "focusMode": "af",
+	
+	    "focusSetting": "spot",
+	
+	    "stillSizeList": [
+		
+		        "L3",
+		
+		        "M3",
+		
+		        "S3",
+		
+		        "XS3"
+		    
+	],
+	
+	    "movieSizeList": [
+		
+		        "FHD24p",
+		
+		        "FHD30p",
+		
+		        "FHD60p"
+		    
+	],
+	
+	    "captureModeList": [
+		
+		        "still",
+		
+		        "movie"
+		    
+	],
+	
+	    "shootModeList": [
+		
+		        "single",
+		
+		        "self2s",
+		
+		        "self10s",
+		
+		        "continuous",
+		
+		        "interval",
+		
+		        "intervalSelf2s",
+		
+		        "intervalSelf10s",
+		
+		        "intervalComp",
+		
+		        "intervalCompSelf2s",
+		
+		        "intervalCompSelf10s",
+		
+		        "multiExp",
+		
+		        "multiExpSelf2s",
+		
+		        "multiExpSelf10s",
+		
+		        "bracket",
+		
+		        "bracketSelf2s",
+		
+		        "bracketSelf10s"
+		    
+	],
+	
+	    "exposureModeList": [
+		
+		        "M",
+		
+		        "B",
+		
+		        "T",
+		
+		        "BT"
+		    
+	],
+	
+	    "meteringModeList": [
+		
+		        "multi",
+		
+		        "center",
+		
+		        "spot",
+		
+		        "highlight"
+		    
+	],
+	
+	    "WBModeList": [
+		
+		        "auto",
+		
+		        "multiAuto",
+		
+		        "daylight",
+		
+		        "shade",
+		
+		        "cloud",
+		
+		        "daylightFluorescent",
+		
+		        "dayWhiteFluorescent",
+		
+		        "coolWhiteFluorescent",
+		
+		        "warmWhiteFluorescent",
+		
+		        "tungsten",
+		
+		        "cte",
+		
+		        "colorTemp1",
+		
+		        "manual1"
+		    
+	],
+	
+	    "effectList": [
+		
+		        "off",
+		
+		        "col_vivid",
+		
+		        "efc_monochrome",
+		
+		        "efc_softMonochrome",
+		
+		        "efc_hardMonochrome",
+		
+		        "efc_highContrast",
+		
+		        "efc_posiFilm",
+		
+		        "efc_bleachBypass",
+		
+		        "efc_retro",
+		
+		        "efc_HDRTone",
+		
+		        "col_custom1",
+		
+		        "col_custom2"
+		    
+	],
+	
+	    "resoList": [
+		
+		        "720x480",
+		
+		        "1080x720"
+		    
+	],
+	
+	    "capturing": false,
+	
+	    "stateStill": "idle",
+	
+	    "stateMovie": "idle",
+	
+	    "countDown": "idle",
+	
+	    "shotsTotal": 1,
+	
+	    "shotsCurrent": 1,
+	
+	    "avList": [
+		
+		        "2.8",
+		
+		        "3.2",
+		
+		        "3.5",
+		
+		        "4.0",
+		
+		        "4.5",
+		
+		        "5.0",
+		
+		        "5.6",
+		
+		        "6.3",
+		
+		        "7.1",
+		
+		        "8.0",
+		
+		        "9.0",
+		
+		        "10",
+		
+		        "11",
+		
+		        "13",
+		
+		        "14",
+		
+		        "16"
+		    
+	],
+	
+	    "tvList": [
+		
+		        "1.2500",
+		
+		        "1.2000",
+		
+		        "1.1600",
+		
+		        "1.1250",
+		
+		        "1.1000",
+		
+		        "1.800",
+		
+		        "1.640",
+		
+		        "1.500",
+		
+		        "1.400",
+		
+		        "1.320",
+		
+		        "1.250",
+		
+		        "1.200",
+		
+		        "1.160",
+		
+		        "1.125",
+		
+		        "1.100",
+		
+		        "1.80",
+		
+		        "1.60",
+		
+		        "1.50",
+		
+		        "1.40",
+		
+		        "1.30",
+		
+		        "1.25",
+		
+		        "1.20",
+		
+		        "1.15",
+		
+		        "1.13",
+		
+		        "1.10",
+		
+		        "1.8",
+		
+		        "1.6",
+		
+		        "1.5",
+		
+		        "1.4",
+		
+		        "3.10",
+		
+		        "4.10",
+		
+		        "5.10",
+		
+		        "6.10",
+		
+		        "8.10",
+		
+		        "1.1",
+		
+		        "13.10",
+		
+		        "16.10",
+		
+		        "2.1",
+		
+		        "25.10",
+		
+		        "3.1",
+		
+		        "4.1",
+		
+		        "5.1",
+		
+		        "6.1",
+		
+		        "8.1",
+		
+		        "10.1",
+		
+		        "13.1",
+		
+		        "15.1",
+		
+		        "20.1",
+		
+		        "25.1",
+		
+		        "30.1"
+		    
+	],
+	
+	    "svList": [
+		
+		        "100",
+		
+		        "125",
+		
+		        "160",
+		
+		        "200",
+		
+		        "250",
+		
+		        "320",
+		
+		        "400",
+		
+		        "500",
+		
+		        "640",
+		
+		        "800",
+		
+		        "1000",
+		
+		        "1250",
+		
+		        "1600",
+		
+		        "2000",
+		
+		        "2500",
+		
+		        "3200",
+		
+		        "4000",
+		
+		        "5000",
+		
+		        "6400",
+		
+		        "8000",
+		
+		        "10000",
+		
+		        "12800",
+		
+		        "16000",
+		
+		        "20000",
+		
+		        "25600",
+		
+		        "32000",
+		
+		        "40000",
+		
+		        "51200",
+		
+		        "64000",
+		
+		        "80000",
+		
+		        "102400"
+		    
+	],
+	
+	    "xvList": [
+		
+	],
+	
+	    "stillSize": "L3",
+	
+	    "movieSize": "FHD60p",
+	
+	    "captureMode": "still",
+	
+	    "shootMode": "single",
+	
+	    "onePushBracket": false,
+	
+	    "WBMode": "auto",
+	
+	    "exposureMode": "auto",
+	
+	    "meteringMode": "multi",
+	
+	    "av": "2.8",
+	
+	    "tv": "1.30",
+	
+	    "sv": "250",
+	
+	    "xv": "0.0",
+	
+	    "effect": "off",
+	
+	    "liveState": "busy"
+	
+}
+
+### Index (?) 404
+
+
+Request Head:
+
+POST /v1/photos?storage=in HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; Pixel 3 Build/PQ2A.190405.003)
+Host: 192.168.0.1
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 0
+
+
+Body:
+
+
+
+Response Head:
+
+HTTP/1.1 404 Not Found
+Content-Length: 15
+Server: Crow/0.1
+Date: Sat, 20 Apr 2019 10:00:31 GMT
+
+
+Body:
+
+404 Not Found
+
+### Index 200
+
+
+Request Head:
+
+GET /v1/photos?storage=in HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; Pixel 3 Build/PQ2A.190405.003)
+Host: 192.168.0.1
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
+
+Body:
+
+
+
+Response Head:
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Expires: 0
+Pragma: no-cache
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+Content-Length: 2455
+Server: Crow/0.1
+Date: Sat, 20 Apr 2019 10:00:32 GMT
+
+
+Body:
+
+{
+	
+	    "errCode": 200,
+	
+	    "errMsg": "OK",
+	
+	    "dirs": [
+		
+		        {
+			
+			            "name": "100RICOH",
+			
+			            "files": [
+				
+				                "_R000443.DNG",
+				
+				                "_R000444.DNG",
+				
+				                "_R000445.DNG",
+				
+				                "_R000446.DNG",
+				
+				                "_R000447.DNG",
+				
+				                "_R000448.DNG",
+				
+				                "_R000449.DNG",
+				
+				                "_R000450.DNG",
+				
+				                "_R000452.DNG",
+				
+				                "_R000453.DNG",
+				
+				                "_R000460.DNG",
+				
+				                "_R000461.DNG",
+				
+				                "_R000462.DNG",
+				
+				                "_R000463.DNG",
+				
+				                "_R000464.DNG",
+				
+				                "_R000465.DNG",
+				
+				                "_R000467.DNG",
+				
+				                "_R000468.DNG",
+				
+				                "_R000469.DNG",
+				
+				                "_R000470.DNG",
+				
+				                "_R000471.DNG",
+				
+				                "_R000472.DNG",
+				
+				                "_R000473.DNG",
+				
+				                "_R000474.DNG",
+				
+				                "_R000476.DNG",
+				
+				                "_R000480.DNG",
+				
+				                "_R000481.DNG",
+				
+				                "_R000482.DNG",
+				
+				                "_R000483.DNG",
+				
+				                "_R000484.DNG",
+				
+				                "_R000485.DNG",
+				
+				                "_R000486.DNG",
+				
+				                "_R000487.DNG",
+				
+				                "_R000488.DNG",
+				
+				                "_R000489.DNG",
+				
+				                "_R000490.DNG",
+				
+				                "_R000491.DNG",
+				
+				                "_R000492.DNG",
+				
+				                "_R000494.DNG",
+				
+				                "_R000495.DNG",
+				
+				                "_R000496.DNG",
+				
+				                "_R000497.DNG",
+				
+				                "_R000498.DNG",
+				
+				                "_R000499.DNG",
+				
+				                "_R000500.DNG",
+				
+				                "_R000501.DNG",
+				
+				                "_R000502.DNG",
+				
+				                "_R000503.DNG",
+				
+				                "_R000504.DNG",
+				
+				                "_R000505.DNG",
+				
+				                "_R000506.DNG",
+				
+				                "_R000507.DNG",
+				
+				                "_R000508.DNG",
+				
+				                "_R000509.DNG",
+				
+				                "_R000510.DNG",
+				
+				                "_R000511.DNG",
+				
+				                "_R000512.DNG",
+				
+				                "_R000513.DNG",
+				
+				                "_R000514.DNG",
+				
+				                "_R000515.DNG",
+				
+				                "_R000516.DNG",
+				
+				                "_R000517.DNG",
+				
+				                "_R000518.DNG",
+				
+				                "_R000519.DNG",
+				
+				                "_R000520.DNG",
+				
+				                "_R000521.DNG",
+				
+				                "_R000522.DNG",
+				
+				                "_R000523.DNG",
+				
+				                "_R000524.DNG",
+				
+				                "_R000525.DNG",
+				
+				                "_R000526.DNG",
+				
+				                "_R000527.DNG"
+				            
+			]
+			        
+		}
+		    
+	]
+	
+}
+
+### Specs (?) 404
+
+
+Request Head:
+
+POST /v1/photos/100RICOH/_R000527.DNG/info?storage=in HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; Pixel 3 Build/PQ2A.190405.003)
+Host: 192.168.0.1
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 0
+
+
+Body:
+
+
+
+Response Head:
+
+HTTP/1.1 404 Not Found
+Content-Length: 15
+Server: Crow/0.1
+Date: Sat, 20 Apr 2019 10:00:32 GMT
+
+
+Body:
+
+404 Not Found
+
+### Specs 200
+Request Head:
+
+GET /v1/photos/100RICOH/_R000527.DNG/info?storage=in HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; Pixel 3 Build/PQ2A.190405.003)
+Host: 192.168.0.1
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
+
+Body:
+
+
+
+Response Head:
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Expires: 0
+Pragma: no-cache
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+Content-Length: 326
+Server: Crow/0.1
+Date: Sat, 20 Apr 2019 10:00:32 GMT
+
+
+Body:
+
+{
+	
+	    "errCode": 200,
+	
+	    "errMsg": "OK",
+	
+	    "cameraModel": "RICOH GR III",
+	
+	    "dir": "100RICOH",
+	
+	    "file": "_R000527.DNG",
+	
+	    "size": 29606608,
+	
+	    "datetime": "2019-04-20T09:59:36",
+	
+	    "orientation": 1,
+	
+	    "aspectRatio": "3:2",
+	
+	    "av": "2.8",
+	
+	    "tv": "1.30",
+	
+	    "sv": "1250",
+	
+	    "xv": "0.0",
+	
+	    "gpsInfo": ""
+	
+}
+
+### Preview
+
+
+
+Request Head:
+
+GET /v1/photos/100RICOH/_R000527.DNG?size=view&storage=in HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; Pixel 3 Build/PQ2A.190405.003)
+Host: 192.168.0.1
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
+
+Body:
+
+
+
+Response Head:
+
+HTTP/1.1 200 OK
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+Expires: 0
+Pragma: no-cache
+Content-Type: image/jpeg
+Content-Length: 60334
+
+
+Body:
+
+
+
+/storage/emulated/0/NetCapture/ParseData/2019_04_20_10_00_18_18/Pentax Image Sender/TCP_192.168.0.1_re_80_lo_43712/sslCapture_image_684379084.jpeg
+
+
+
+### Asset
+
+
+
+Request Head:
+
+GET /v1/photos/100RICOH/_R000527.DNG?storage=in HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 9; Pixel 3 Build/PQ2A.190405.003)
+Host: 192.168.0.1
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
+
+Body:
+
+
+
+Response Head:
+
+HTTP/1.1 200 OK
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+Expires: 0
+Pragma: no-cache
+Content-Type: image/x-adobe-dng
+Content-Length: 29606608
+
+
+Body:
+
+
+
+/storage/emulated/0/NetCapture/ParseData/2019_04_20_10_00_18_18/Pentax Image Sender/TCP_192.168.0.1_re_80_lo_44034/sslCapture_image_865840985.x-adobe-dng
+

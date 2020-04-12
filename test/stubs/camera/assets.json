@@ -1,0 +1,32 @@
+{
+  "headers": {
+    "Content-Type": "application/json",
+    "Expires": 0,
+    "Pragma": "no-cache",
+    "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
+    "Server": "Crow/0.1",
+    "Date": "Sat, 20 Apr 2019 10:00:32 GMT"
+  },
+  "body": {
+    "errCode": 200,
+    "errMsg": "OK",
+    "dirs": [
+      {
+        "name": "DIR1",
+        "files": [
+          "FILE11.DNG",
+          "FILE12.DNG",
+          "FILE13.DNG" 
+        ]
+      },
+      {
+        "name": "DIR2",
+        "files": [
+          "FILE21.DNG",
+          "FILE22.DNG",
+          "FILE23.DNG" 
+        ]
+      }
+    ]
+  }
+}

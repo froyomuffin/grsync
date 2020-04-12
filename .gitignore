@@ -1,0 +1,6 @@
+vendor
+.bundle/
+.byebug_history
+import
+.DS_Store
+
