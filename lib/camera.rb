@@ -35,7 +35,10 @@ class Camera
   CAMERA_URL = "http://192.168.0.1"
 
   def fetch_camera_details
-    connection = Faraday.new(url: CAMERA_URL)
+    connection = Faraday.new(url: CAMERA_URL, request: {
+      open_timeout: 2,   # opening a connection
+      timeout: 5         # waiting for response
+    })
 
     response = connection.get do |request|
       request.url "v1/props"
@@ -47,7 +50,10 @@ class Camera
 
 
   def fetch_assets_index
-    connection = Faraday.new(url: CAMERA_URL)
+    connection = Faraday.new(url: CAMERA_URL, request: {
+      open_timeout: 2,   # opening a connection
+      timeout: 5         # waiting for response
+    })
 
     response = connection.get do |request|
       request.url "v1/photos"
