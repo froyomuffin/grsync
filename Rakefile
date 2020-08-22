@@ -12,6 +12,10 @@ IMPORT_DIR = 'import'
 task :import do
   FileUtils.mkdir_p(IMPORT_DIR) unless File.directory?(IMPORT_DIR)
 
+  existing_assets = Dir.entries(IMPORT_DIR).reject do |entry|
+    entry == '.' || entry == '..'
+  end
+
   puts "Fetching assets"
 
   assets = Camera.new.assets
@@ -25,10 +29,14 @@ task :import do
     puts "Downloading #{index + 1}/#{assets.count}"
     puts details
 
-    data = asset.data[:data]
-    relative_file_name = "#{IMPORT_DIR}/#{file_name}"
+    if existing_assets.include?(file_name)
+      puts "Asset already imported"
+    else
+      data = asset.data[:data]
+      relative_file_name = "#{IMPORT_DIR}/#{file_name}"
 
-    File.write(relative_file_name, data)
+      File.write(relative_file_name, data)
+    end
   end
 end
 
