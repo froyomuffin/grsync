@@ -1,0 +1,93 @@
+#! /bin/bash
+
+function connection_status {
+  systemctl status wpa_supplicant@wlan0 | grep 'SSID\|completed' | wc -l
+}
+
+function is_connected {
+  if [[ $(connection_status) = 2 ]]; then
+    echo 1
+  else
+    echo 0
+  fi
+}
+
+function wait_until_connected {
+  while true; do
+    if [[ $(is_connected) = 1 ]]; then
+      break
+    fi
+
+    sleep 5
+  done
+}
+
+function connect_camera {
+  systemctl start wpa_supplicant@wlan0
+
+  wait_until_connected
+}
+
+function import_pictures {
+  bundle exec rake import
+}
+
+function disconnect_camera {
+  systemctl stop wpa_supplicant@wlan0
+}
+
+last_camera_state=0
+current_camera_state=0
+
+function _current_camera_state {
+  iw dev wlan0 scan | grep GR_019A81 | wc -l 
+}
+
+function camera_turned_on {
+  if [[ $last_camera_state = 0 ]] && [[ $current_camera_state = 1 ]]; then
+    echo 1
+  else
+    echo 0
+  fi
+}
+
+function camera_turned_off {
+  if [[ $last_camera_state = 1 ]] && [[ $current_camera_state = 0 ]]; then
+    echo 1
+  else
+    echo 0
+  fi
+}
+
+function ts_echo {
+  echo "[$(date)] $1"
+}
+
+ts_echo "Starting Daemon"
+disconnect_camera
+
+while true; do
+  current_camera_state=$(_current_camera_state)
+
+  if [[ $(camera_turned_on) = 1 ]]; then
+    ts_echo "Camera found"
+
+    ts_echo "Connecting to Camera..."
+    connect_camera
+    ts_echo "Connected"
+
+    ts_echo "Importing Pictures..."
+    import_pictures
+    ts_echo "Done"
+
+    ts_echo "Disconnecting Camera..."
+    disconnect_camera
+  elif [[ $(camera_turned_off) = 1 ]]; then
+    ts_echo "Camera gone"
+    echo
+  fi
+
+  last_camera_state=$current_camera_state
+
+  sleep 1
+done
